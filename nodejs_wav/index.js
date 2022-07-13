@@ -6,8 +6,9 @@ const Duplex = require('stream').Duplex;
 const Wav = require('node-wav');
 
 let modelPath = './models/model.tflite';
+let modelBuffer = Fs.readFileSync(modelPath);
 
-let model = new STT.Model(modelPath);
+let model = new STT.Model(modelBuffer.toString('binary'), true);
 
 let desiredSampleRate = model.sampleRate();
 
