@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "argparse": "^1.0.10",
-    "stt": "^1.0.0",
     "node-wav": "0.0.2",
     "sox-stream": "^2.0.3",
+    "stt": "file:stt-1.4.0-alpha.1.tgz",
     "util": "^0.11.1"
   },
   "license": "Public domain"
